@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html box model</title>
+    <style>
+        #firstdiv{
+            background-color: aquamarine;
+            margin:25px;
+            padding:5px;
+        }
+        #seconddiv{
+            background-color: blueviolet;
+            margin:25px;
+            padding: 5px;
+        }
+        .div{
+            font-size:25px;
+            border:5px solid blue;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="firstdiv" class="div">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fugit, aperiam velit ducimus tempore magni numquam sequi quis, ea id nihil odit dolorum enim delectus blanditiis quae laborum libero vel.</p>
+    </div>
+    <div id="seconddiv" class="div">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore pariatur repudiandae consequatur aspernatur maiores nisi laboriosam et? Aspernatur assumenda molestias dolore quae, saepe, repudiandae sunt ipsa fugit distinctio adipisci tempore eos. Natus corrupti nulla in quos nesciunt doloremque architecto eaque!</p>
+    </div>
+</body>
+</html>
