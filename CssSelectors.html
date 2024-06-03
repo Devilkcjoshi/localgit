@@ -4,10 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>firstdocument</title>
-    <link rel="stylesheet" href="First.css">
+    <style>
+        /* class selector */
+        .para{
+            background-color: rgba(126, 198, 174, 0.494);
+            font-size : 25px;;
+        }
+        /* id selector */
+        #firstpara{
+            color:darkblue;
+        }
+        #secondpara{
+            color:darkred;
+        }
+        /* child selector */
+        div > h2{
+            text-align:center;
+        }
+        div > h3{
+            text-align:center;
+        }
+        div > a{
+            font-size:20px;
+            margin-left:600px;
+        }
+        /* Descendent selectors */
+        div span {
+            color:rgb(94, 5, 54);
+        }
+        /* pseudo selectors */
+        a:link{
+            color:green;
+        }
+        a:visited{
+            color:red;
+        }
+        a:hover{
+            color:blue;
+        }
+        a:active{
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body>
-    <h1>this is our first heading</h1>
-    <h1>this is our another heading</h1>
+    <div class="para" id="firstpara">
+        <h2> this is our first para </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nemo reiciendis odit! Voluptates eius laudantium <span>this is kamal </span>nemo eaque qui error amet quo dignissimos ipsum beatae.</p>
+    </div>
+    <div class="para" id="secondpara">
+        <h3> this is our second para </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure at assumenda possimus? Quaerat voluptatem tempora amet ipsum illo magni nam beatae sapiente illum earum reprehenderit praesentium, expedita natus? Asperiores, laudantium!</p>
+    </div>
+    <div id="thirdiv">
+        <a href="https://www.google.com" target="_blank">visit google</a>
+    </div>
+    <div id="fourthdiv">
+        <a href="https://www.github.com" target="_blank">visit code</a>
+    </div>
 </body>
 </html>
