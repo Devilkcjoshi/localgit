@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css display property</title>
+    <style>
+          div{
+            display:inline-block;
+            width:200px;
+            height:200px;
+          }
+          #firstdiv{
+            background-color:red;
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            /* display:none; */ /* this will delete the element.*/
+            /* visibility: hidden; */ /* this will hide the element but space will be reserved */
+          }
+          .seconddiv{
+            background-color:blue;
+            border-top-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+          }
+          .thirddiv{
+            background-color:aqua;
+            border-top-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+        }
+        .fourthdiv{
+            background-color:purple;
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+          }
+    </style>
+</head>
+<body>
+    <div>
+    <div class="thirddiv">
+
+    </div>
+    <div class="fourthdiv">
+
+    </div>
+    </div>
+    <div>
+    <div id="firstdiv">
+
+    </div>
+    <div class="seconddiv">
+
+    </div>
+    </div>
+</body>
+</html>
