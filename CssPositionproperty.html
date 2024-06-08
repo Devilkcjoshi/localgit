@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position attributes</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box {
+            margin: 10px;
+            padding: 20px;
+            border: 2px solid black;
+            width: 76vw;
+        }
+
+        .parent {
+            border: 5px solid black;
+            width: 80vw;
+            margin: auto;
+            margin-top: 10px;
+            /* position:absolute; */
+            height: 2000px;
+        }
+
+        .box1 {
+            background-color: red;
+            height: 15vh;
+            /* position: relative;
+            z-index:2; */
+            /* position:absolute;
+            top:0px;
+            left:0px; */
+            /* position:sticky;
+            top:0px; */
+        }
+
+        .box2 {
+            background-color: blue;
+            height: 15vh;
+            /* position: relative;
+            top: -200px;
+            left: 100px;
+            z-index: 1; */
+        }
+
+        .box3 {
+            background-color: aqua;
+            height: 15vh;
+            /* position: fixed;
+            top: 175px;
+            left: 265px; */
+
+        }
+
+        .box4 {
+            background-color: aquamarine;
+            height: 15vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+<!-- css position property :- (i) :- relative property :- we can apply the top left and right or bottom property in a element and we can set the z-index of the element without using position relative or any position we can not use z-index; -->
+<!-- (ii):- abslute property :- we use the abslute position to check for which element the element will be moved like the element in which the abslute property is applied it will move relative to the neareast positioned ensister.all all the top,left,right and bottom property will be applied according to the neareast positioned ensister; -->
+<!-- (iii) fixed position :- we use fixed position to fix an element in the urrent page it will fix the fixed position element throughout the page however the page is scrolled or not. -->
+<!-- (iv):- position sticky :- in this position the element will behave like a static position until we will scroll to it and after that it will behave like a fixed element but there is a lot of difference between sicky and fixed. -->
+<!-- Exception:- transform, filter and perspactive properties can also make an element appear as positioned it means that the element will behave like the his neareast positioned element is positioned weather it is positioned of we are using transform, filter of perspactive properties.  -->
+</html>
