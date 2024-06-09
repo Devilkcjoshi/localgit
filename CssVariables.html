@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        :root {
+            --color: rgba(224, 149, 149, 0.609);
+            --defpad: 20px;
+            --seccolor: rgba(182, 182, 213, 0.66);
+        }
+        .container{
+            margin:var(--defpad);
+        }
+        .nav{
+            border:2px solid var(--seccolor);
+            border-radius:5px;
+            background-color:var(--seccolor);
+            width:25vw;
+            margin:5px auto 10px 5px;
+        }
+        ul{
+            display:flex;
+        }
+        li{
+            margin:10px var(--defpad) 10px var(--defpad);
+            list-style:none;
+        }
+        h1{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align:center;
+            padding:var(--defpad);
+        }
+        .container > p{
+            color:blue;
+            padding:10px;
+            background-color: var(--color);
+            font-size:18px;
+            word-spacing: 3px;
+        }
+        .container>p:nth-child(3){
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Help</li>
+            </ul>
+        </div>
+        <h1>this is our para</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem dignissimos quo sit hic obcaecati error
+            voluptatum, autem fugiat, expedita beatae minima. Vero unde deleniti labore at, tenetur voluptatibus impedit
+            sed?</p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus illum et delectus, natus adipisci
+            illo distinctio veritatis explicabo temporibus necessitatibus magnam ratione voluptas facilis accusantium
+            obcaecati quae nesciunt reiciendis. Molestias similique eligendi facere beatae! Omnis tempore neque
+            aspernatur natus.
+        </p>
+    </div>
+</body>
+<!-- css variables :- css variables are used to set a property to more than one elements and we can use it in more than one places -->
+</html>
