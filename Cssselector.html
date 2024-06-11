@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on css selectors</title>
+    <style>
+        .box:first-child{
+            color:red;
+        }
+        .box::first-letter{
+            font-size:25px;
+            color:red;
+        }
+        .box::first-line{
+            color:blue;
+        }
+        .box::before{
+            content:'this is our para ';
+            display:block;
+        }
+        .box:nth-child(2)::after{
+            content:'Hello kamal chandra this is our second para';
+            display:block;
+            color:gray;
+        }
+        .box:nth-child(even){
+            border:2px solid black;
+            border-radius:5px;
+            padding:5px;
+        }
+        .box:nth-child(odd){
+            border:2px solid green;
+            margin:5px;
+            border-radius:5px;
+            padding:5px;
+        }
+        .box:nth-child(4)::first-line{
+            color:orange;
+        }
+        .container *{
+            background-color:lightgray;
+        }
+        .box::selection{
+            background-color: blue;
+            color:red;
+        }
+        input::placeholder{
+            color:blue;
+            font-size:10px;
+        }
+        .container [name="color"]{
+            border-right: hidden;
+            border-left:hidden;
+        }
+        .container [x="y"]{
+            color:aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ea asperiores quibusdam, amet enim officia repellat tempore laboriosam temporibus delectus.</div>
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, doloribus? Lorem ipsum, dolor sit <span x="y">amet consectetur adipisicing elit.</span> Impedit ea asperiores quibusdam, amet enim officia repellat tempore laboriosam temporibus delectus.</div>
+        <div class="box" name="color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ea asperiores quibusdam, amet enim officia repellat tempore laboriosam temporibus delectus.</div>
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ea asperiores quibusdam, amet enim officia repellat tempore laboriosam temporibus delectus.</div>
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ea asperiores quibusdam, amet enim officia repellat tempore laboriosam temporibus delectus.</div>
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ea asperiores quibusdam, amet enim officia repellat tempore laboriosam temporibus delectus.</div>
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ea asperiores quibusdam, amet enim officia repellat tempore laboriosam temporibus delectus.</div>
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ea asperiores quibusdam, amet enim officia repellat tempore laboriosam temporibus delectus.</div>
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ea asperiores quibusdam, amet enim officia repellat tempore laboriosam temporibus delectus.</div>
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ea asperiores quibusdam, amet enim officia repellat tempore laboriosam temporibus delectus.</div>
+    </div>
+    <label for="name">Enter your name :- </label>
+    <input type="text" name="username" id="name" placeholder="enter your name">
+</body>
+</html>
