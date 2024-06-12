@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box tutorial</title>
+    <style>
+        .container{
+            height:80vh;
+            border:2px solid black;
+            margin:5px;
+            display:flex;
+            /* flex-direction:row-reverse; */
+            /* flex-direction:column;
+            flex-direction:column-reverse; */
+            /* justify-content:center; */
+            /* justify-content:flex-end; */
+            /* align-items: center; */
+            /* align-items:flex-end;  */
+            /* align-items:flex-start; */
+            /* justify-content:flex-start; */
+            /* justify-content:space-around; */
+            /* justify-content:space-between; */
+            /* justify-content:space-evenly; */
+            flex-wrap:wrap;
+            /* flex-wrap:wrap-reverse; */
+
+            /* align-content: center; it is used where we use wrap property because it is used in more than one line */
+            /* align-content:center; */
+            /* align-content:flex-end; */
+            align-content:flex-start;
+            /* gap:20px;
+            row-gap:20px;
+            column-gap:10px; */
+            /* gap:20px 10px; */
+        }
+        .flex{
+            flex-grow:1;
+            margin:5px;
+            width:92px;
+            height:92px;
+            background-color: blue;
+            border:2px solid black;
+            text-align: center;
+        }
+        .order1{
+            order:1;
+        }
+        .order2{
+            order:2;
+        }
+        .order10{
+            order:10;
+        }
+        .order100{
+            order:100;
+            flex-grow:2;
+            /* flex-shrink: 2; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex order100">1</div>
+        <div class="flex">2</div>
+        <div class="flex">3</div>
+        <div class="flex">4</div>
+        <div class="flex">5</div>
+        <div class="flex">6</div>
+        <div class="flex">7</div>
+        <div class="flex">8</div>
+        <div class="flex">9</div>
+        <div class="flex">10</div>
+        <!-- <div class="flex">11</div>
+        <div class="flex">12</div>
+        <div class="flex">13</div>
+        <div class="flex">14</div>
+        <div class="flex">15</div>
+        <div class="flex order2">16</div>
+        <div class="flex">17</div>
+        <div class="flex">18</div>
+        <div class="flex">19</div>
+        <div class="flex">20</div>
+        <div class="flex">21</div>
+        <div class="flex">22</div>
+        <div class="flex">23</div>
+        <div class="flex order10">24</div>
+        <div class="flex">25</div>
+        <div class="flex">26</div>
+        <div class="flex">27</div>
+        <div class="flex order1">28</div>
+        <div class="flex">29</div>
+        <div class="flex">30</div> -->
+    </div>
+</body>
+</html>
