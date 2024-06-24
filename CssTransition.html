@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Transition</title>
+    <style>
+        .container{
+            border:2px solid black;
+            width:50vw;
+            height:50vh;
+            display:flex;
+        }
+        .box{
+            border:10px solid blue;
+            width:50px;
+            height:20px;
+            background-color:blueviolet;
+            transition-property:all;
+            transition-timing-function:ease-in;
+            transition-duration:5s;
+            transition-delay:1s;
+        }
+        .A{
+            transform:translateX(100px) translateY(100px);
+            border-color:red;
+            border-radius:100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box A"></div>
+    </div>
+</body>
+</html>
+<!-- trasition property :- (i):- trasition-property :- this is used to select that where we want to apply the transition property
+ (ii) :- transition-timing-function :- this is used to define that which kind of transition we want.
+ (iii):- transition-duration :- this is used to define that what will be the duration of our transition will take.
+ (iv) :- transition-delay :- this is used to define that how much time our trasition will take. -->

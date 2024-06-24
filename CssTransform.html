@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transform property</title>
+    <style>
+        .container{
+            border:2px solid black;
+            width:200px;
+            height:200px;
+            margin:100px;
+
+        }
+        .box{
+            display:flex;
+            width:50px;
+            height:50px;
+            border:5px solid;
+            border-left-color:red;
+            border-right-color:blue;
+            border-bottom-color:blueviolet;
+            border-top-color:aqua;
+            justify-content:center;
+            align-items:center;
+            /* transform rotate property */
+            /* transform:rotate(.25turn); */
+            /* transform:rotatex(45deg); */
+            /* transform:rotatey(90deg); */
+            /* transform:rotatez(90deg); */
+            /* transform scale property */
+            /* transform:scale(2); */
+            /* transform:scalex(2); */
+            /* transform:scaley(2); */
+            /* transform:scalez(2); */
+            /* transform skew property */
+            /* transform:skew(100%); */
+            /* transform:skewX(45deg); */
+            /* transform:skew(45deg); */
+            /* transform:skewY(45deg); */
+            /* transform translate property */
+            /* transform:translate(100%); */
+            /* transform:translateX(100%); */
+            /* transform:translateY(100%); */
+            /* transform:translateZ(100%); */
+            /* transform: translate3d(100%); */
+            /* we can apply more than one transform property using blow line; */
+            /* transform:scale(2) translateX(100%) translateY(-100%) skew(45deg) rotate(90deg); */
+            transform-origin:0% 0%;
+            /* transform:rotate(45deg); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>
